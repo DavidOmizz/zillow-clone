@@ -1,0 +1,193 @@
+.get-recommendation {
+    display: flex;
+    margin-top: 80px;
+    justify-content: center;
+    align-items: center;
+}
+.get-recommendation--text {
+    text-align: center;
+}
+.get-recommendation--text h5 {
+    color: rgb(42, 42, 51);
+    -webkit-font-smoothing: antialiased;
+    text-transform: none;
+    font-family: "Open Sans", "Adjusted Arial", Tahoma, Geneva, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0px;
+}
+
+.get-recommendation--text span {
+    display: block;
+    color: rgb(89, 107, 130);
+    -webkit-font-smoothing: antialiased;
+    text-transform: none;
+    font-family: "Open Sans", "Adjusted Arial", Tahoma, Geneva, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0px;
+    margin-top: 10px;
+}
+.get-recommendation--text button {
+    left: 0px;
+    height: 44px;
+    min-width: 44px;
+    width: 30%;
+    border: 1px solid blue;
+    margin-top: 20px;
+    line-height: 24px;
+    background-color: transparent;
+    color: blue;
+    font-family: "Open Sans", "Adjusted Arial", Tahoma, Geneva, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.get-recommendation--img {
+    margin-left: 30px;
+}
+
+
+
+
+/* SERVICES ------------------------------------------------- */
+.services-cards {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 40px;
+    text-align: center;
+    background-color: #b7b7b823;
+}
+.services-card:hover {
+    /* background-color: green; */
+    transform: scale(1.1);
+    box-shadow: -1px 2px 6px rgba(0, 0, 0, 0.3);
+
+}
+.services-card {
+    /* flex: 1; */
+    margin: 20px;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    /* background-color: red; */
+    padding: 20px;
+    transition: transform 0.3s ease;
+    background-color: white;
+    width: 25% !important;
+    border-radius: 5px;
+    box-shadow: -1px 2px 6px rgba(0, 0, 0, 0.3);
+}
+.services-card img {
+    /* margin: 0 auto; */
+}
+.services-card h4 {
+    color: rgb(42, 42, 51);
+    -webkit-font-smoothing: antialiased;
+    text-transform: none;
+    font-family: "Ivar Headline", "Ivar Headline Subset", "Adjusted Times", "Adjusted Times New Roman", "Times New Roman", serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0px;
+}
+.services-card button {
+    background-color: transparent;
+    padding: 15px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 15px;
+    color: blue;
+    font-family: "Open Sans", "Adjusted Arial", Tahoma, Geneva, sans-serif;
+}
+.services-card button:hover {
+    background-color: blue;
+    color: black;
+    border: 1px solid black;
+}
+
+
+.select-home {
+    display: flex;
+    justify-content: center;
+}
+.select-home--btn {
+    margin: 20px;
+}
+.select-home--btn button {
+    border: none;
+    background-color: transparent;
+    align-items: center;
+    display: flex;
+    font-size: 17px;
+    /* padding: 20px; */
+}
+.select-home--btn button a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: "Open Sans", "Adjusted Arial", Tahoma, Geneva, sans-serif;
+}
+
+.border-line {
+    border-left: 1px solid black !important;
+    padding-left: 90px;
+}
+
+
+
+
+.divider {
+    padding: .05px;
+    background-color: rgb(180, 180, 180);
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+
+.estate-links {
+    margin: 20px auto;
+    width: 90%;
+    text-align: center;
+    font-size: 15px;
+    line-height: 22.5px;
+    /* display: flex; */
+}
+.estate-links a {
+    margin: 6.4px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.671);
+}
+
+
+
+.contact {
+    width: 63%;
+    text-align: center;
+    font-size: 10px;
+    margin: 0 auto;
+}
+
+
+.download-btn {
+    text-align: center;
+    margin-top: 20px;
+}
+.download-btn img {
+    margin: 5px;
+}
+
+
+.socials-container {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    /* padding: 20px; */
+}

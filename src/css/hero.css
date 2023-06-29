@@ -1,0 +1,74 @@
+.hero-container {
+    text-align: center;
+    background: url('../images/1920w_nationalbrand.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    background-position: left top center;
+    padding: 20px;
+}
+.hero-container h1 {
+    color: white;
+    font-family: "Ivar Headline", "Ivar Headline Subset", "Adjusted Times", "Adjusted Times New Roman", "Times New Roman", serif;
+    line-height: 40px;
+    /* max-width: 550px; */
+    padding-top: 100px;
+    text-align: center;
+    font-size: 36px;
+}
+
+
+
+  /* .search-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  .search-container input[type="text"] {
+    padding-right: 30px;
+  }
+
+  .search-container .search-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+  } */
+
+
+.search-container {
+    position: relative;
+    display: inline-block;
+}
+
+.search-container input[type="text"] {
+    padding-right: 100px;
+    padding-left: 20px;
+    outline: blue;
+    /* border: 2px blue solid; */
+    /* outline: navy; */
+    height: 70px;
+    width: 550px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: text;
+    border-radius: 5px;
+    border: none;
+}
+.search-container input:focus {
+    box-shadow: -1px 1px 6px 3px #006aff;
+    /* -webkit-box-shadow: -1px 2px 6px 3px rgba(128,89,245,1);
+    -moz-box-shadow: -1px 2px 6px 3px rgba(128,89,245,1); */
+    /* border: 1px light rgb(0, 106, 255); */
+}
+
+.search-container .search-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: rgb(121, 121, 121);
+}
+
