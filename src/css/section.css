@@ -117,7 +117,8 @@
     justify-content: center;
 }
 .select-home--btn {
-    margin: 20px;
+    /* margin: 70px; */
+    width: 20%;
 }
 .select-home--btn button {
     border: none;
@@ -125,7 +126,7 @@
     align-items: center;
     display: flex;
     font-size: 17px;
-    /* padding: 20px; */
+    padding: 20px;
 }
 .select-home--btn button a {
     color: black;
@@ -133,17 +134,66 @@
     font-weight: 600;
     font-family: "Open Sans", "Adjusted Arial", Tahoma, Geneva, sans-serif;
 }
+.select-home--btn ul {
+    /* margin-left: -30px;
+    margin-top: 10px; */
+    /* background-color: red; */
+    /* width: 50%; */
+}
+
+
+.dropdown-content {
+    display: none;
+    font-size: 17px;
+    margin-left: -30px;
+    /* margin-top: 5px; */
+    /* background-color: red; */
+    /* min-width: 10px; */
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    /* z-index: 999; */
+    /* padding: 12px 16px; */
+    /* transform: scale(1.1); */
+    /* margin: 20px */
+}
+.dropdown-content li a {
+    text-decoration: none;
+    /* color: red !important; */
+    width: 50% !important;
+    text-align: center !important;
+}
+
+
+/* .list-services {
+    background-color: red;
+} */
+
+.list-services {
+    margin-top: 30px;
+}
+.list-services ul li{
+    list-style-type: none;
+    /* width: 20%; */
+}
+
+.list-services ul li button {
+    /* background-color: red; */
+    font-size: 17px;
+    border: none;
+    background-color: transparent;
+    font: 300;
+}
 
 .border-line {
-    border-left: 1px solid black !important;
+    /* border-left: 1px solid black !important; */
     padding-left: 90px;
+    /* height: 30px; */
 }
 
 
 
 
 .divider {
-    padding: .05px;
+    padding: 0.5px;
     background-color: rgb(180, 180, 180);
     width: 90%;
     display: block;
@@ -191,3 +241,14 @@
     margin-bottom: 70px;
     /* padding: 20px; */
 }
+
+
+
+
+/* .dropdown-content {
+    display: none;
+    background-color: red;
+    min-width: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+  } */
