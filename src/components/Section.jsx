@@ -48,7 +48,7 @@ function Section() {
         <a className="services-card">
           <div className="">
             <img src={Buyahome} alt="" width={300} />
-            <h4>Buy Homw</h4>
+            <h4>Buy Home</h4>
             <p>
               Find your place with an immersive photo experience and the most
               listsings, including things you won't find anywhere else.

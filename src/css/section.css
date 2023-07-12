@@ -106,9 +106,9 @@
     font-family: "Open Sans", "Adjusted Arial", Tahoma, Geneva, sans-serif;
 }
 .services-card button:hover {
-    background-color: blue;
-    color: black;
-    border: 1px solid black;
+    background-color: rgba(21, 21, 197, 0.829);
+    color: rgb(31, 30, 30);
+    border: 1px solid rgb(92, 92, 92);
 }
 
 

@@ -7,6 +7,8 @@ nav {
     justify-content: space-around;
     font-size: 16px;
     align-items: center;
+    /* margin-bottom: 5px; */
+    border-bottom: 1px solid black;
 }
 nav ul {
     list-style-type: none;
@@ -35,12 +37,207 @@ nav ul {
 .nav-ul2 ul li a:hover {
     color: blue;
 }
-
+.navHover--child {
+    display: flex;
+}
 .nav-img{
     margin: 20px;
 }
 .nav-img img {
     /* width: 60%; */
-    height: 40px;
-  width: 200px;
+    height: auto;
+    width: 130px;
+}
+
+
+
+.NavHover {
+    z-index: 999;
+    position: absolute;
+    /* left: 50%; */
+    background-color: white;
+    padding-top: 15px;
+    width: 100%;
+    display: none;
+    /* border-top: 1px solid black; */
+    left: 0;
+    /* top: 70px; */
+}
+
+.NavHover span {
+    /* font-weight: 600; */
+    font-family: "Open Sans", "Adjusted Arial", Tahoma, Geneva, sans-serif;
+}
+
+
+.DropDown-container {
+    display: flex;
+    font-size: 14px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: all 5s ease-in-out;
+}
+.DropDown-container span {
+    margin-left: 55px;
+    color: black;
+    font-weight: 500;
+}
+
+.DropDown-container--1 {
+    display: flex;
+}
+.DropDown-container--1 ul{
+    display: block;
+}
+
+
+.DropDown-container--2 ul {
+    display: block;
+    /* padding: 10px; */
+}
+
+
+
+.DropDown1 {
+    /* background-color: green; */
+}
+
+
+
+.NavHover2 {
+    z-index: 999;
+    position: absolute;
+    /* left: 50%; */
+    background-color: white;
+    width: 100%;
+    display: none;
+    left: 0%;
+    font-size: 20px;
+    padding-top: 15px;
+}
+
+.DropDown2-container {
+    display: flex;
+    font-size: 14px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: all 5s ease-in-out;
+}
+.DropDown2-container ul{
+    display: block;
+}
+.DropDown2-container span{
+    margin-left: 55px;
+    font-weight: 500;
+    color: black;
+}
+
+
+.NavHover3 {
+    z-index: 999;
+    position: absolute;
+    /* left: 50%; */
+    background-color: white;
+    padding-top: 15px;
+    width: 100%;
+    display: none;
+    /* border-top: 1px solid black; */
+    left: 0;
+    /* top: 70px; */
+}
+.DropDown3-container {
+    display: flex;
+    font-size: 14px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: all 5s ease-in-out;
+}
+.DropDown3-container ul{
+    display: block;
+}
+.DropDown3-container span{
+    margin-left: 55px;
+    font-weight: 500;
+    color: black;
+}
+
+/* used rent stylying */
+.NavHover4 {
+    z-index: 999;
+    position: absolute;
+    background-color: white;
+    padding-top: 15px;
+    width: 100%;
+    display: none;
+    left: 0;
+}
+
+
+
+
+.NavHover5 {
+    z-index: 999;
+    position: absolute;
+    background-color: white;
+    padding-top: 15px;
+    width: 100%;
+    display: none;
+    left: 0;
+}
+.navHover6 {
+    z-index: 999;
+    position: absolute;
+    background-color: white;
+    padding-top: 15px;
+    width: 20%;
+    display: none;
+    left: 60%;
+}
+
+/* .navHover6.fadeIn {
+    animation: fadeIn 0.6s ease;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  } */
+
+
+/* .nav-Fadeout {
+    animation-delay: nav-Fadeout 0.6s ease;
+}
+@keyframes nav-Fadeout {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  } */
+
+
+
+.Manage-Rentals--DropDown3 {
+    font-size: 14px;
+    padding-top: 20px;
+}
+
+
+.Manage-Rentals--DropDown3 ul{
+    display: block;
+    padding-top: 5px;
+}
+.Manage-Rentals--DropDown3 ul li{
+    padding-top: 7px;
+}
+.Manage-Rentals--DropDown3 span{
+    margin-left: 50px;
+    font-weight: 500;
+    color: black;
+    padding-top: 20px;
 }
