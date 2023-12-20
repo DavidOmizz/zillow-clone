@@ -79,17 +79,20 @@ function Section() {
           </div>
         </a>
       </div>
-        
 
       <div className="list-services">
-        <ul style={{display:'flex', justifyContent:'center'}} >
-          <li className="select-home--btn" >
+        <ul style={{ display: "flex", justifyContent: "center" }}>
+          <li className="select-home--btn">
             <div>
               <button onClick={() => toggleDropdown("dropdown1")}>
-                <span>
-                  Real Estate
-                </span>
-                <BiSolidChevronDown style={{ marginLeft: "15px", fontSize: "20px", color: "blue" }}/>
+                <span>Real Estate</span>
+                <BiSolidChevronDown
+                  style={{
+                    marginLeft: "15px",
+                    fontSize: "20px",
+                    color: "blue",
+                  }}
+                />
               </button>
               <ul id="dropdown1" class="dropdown-content">
                 <li>
@@ -268,13 +271,17 @@ function Section() {
               </ul>
             </div>
           </li>
-          <li className="select-home--btn" >
+          <li className="select-home--btn">
             <div>
               <button onClick={() => toggleDropdown("dropdown2")}>
-                <span>
-                  Rentals
-                </span>
-                <BiSolidChevronDown style={{ marginLeft: "15px", fontSize: "20px", color: "blue" }}/>
+                <span>Rentals</span>
+                <BiSolidChevronDown
+                  style={{
+                    marginLeft: "15px",
+                    fontSize: "20px",
+                    color: "blue",
+                  }}
+                />
               </button>
               <ul id="dropdown2" class="dropdown-content">
                 <li>
@@ -514,10 +521,14 @@ function Section() {
           <li className="select-home--btn">
             <div>
               <button onClick={() => toggleDropdown("dropdown3")}>
-                <span>
-                  Mortgage Rates
-                </span>
-                <BiSolidChevronDown style={{ marginLeft: "15px", fontSize: "20px", color: "blue" }}/>
+                <span>Mortgage Rates</span>
+                <BiSolidChevronDown
+                  style={{
+                    marginLeft: "15px",
+                    fontSize: "20px",
+                    color: "blue",
+                  }}
+                />
               </button>
               <ul id="dropdown3" class="dropdown-content">
                 <li>
@@ -683,10 +694,14 @@ function Section() {
           <li className="select-home--btn">
             <div>
               <button onClick={() => toggleDropdown("dropdown4")}>
-                <span>
-                  Browse Homes
-                </span>
-                <BiSolidChevronDown style={{ marginLeft: "15px", fontSize: "20px", color: "blue" }}/>
+                <span>Browse Homes</span>
+                <BiSolidChevronDown
+                  style={{
+                    marginLeft: "15px",
+                    fontSize: "20px",
+                    color: "blue",
+                  }}
+                />
               </button>
               <ul id="dropdown4" class="dropdown-content">
                 <li>
@@ -1068,8 +1083,6 @@ function Section() {
           </div>
         </div>
       </div> */}
-
-      
 
       <footer style={{ textAlign: "center" }}>
         <img src={FooterArt} style={{ width: "95%" }} />

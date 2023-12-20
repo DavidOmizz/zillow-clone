@@ -4,8 +4,18 @@ import logo from '../images/z-logo-default.svg'
 // import {NavLink} from 'react-router-dom';
 // import { NavLink, Link } from 'react-router-dom'
 import { Link } from 'react-router-dom'
+import { FaHamburger, FaAlignRight, FaCross} from "react-icons/fa";
 
 function NavBar() {
+
+    const [isOpen, setIsOpen] = useState(true)
+
+    const [buyisOpen, setBuyIsOpen] = useState(false)
+    const [rentisOpen, setRentIsOpen] = useState(false)
+    const [sellisOpen, setSellIsOpen] = useState(false)
+    const [homeLoanisOpen, setHomeLoanIsOpen] = useState(false)
+    const [agentFinderisOpen, setAgentFinderIsOpen] = useState(false)
+    const [manageRentalisOpen, setManageRentalIsOpen] = useState(false)
 
     const navDropdown = (elementId)=>{
         let getId = document.getElementById(elementId);
@@ -18,19 +28,38 @@ function NavBar() {
         getId.classList = 'nav-Fadeout'
     }
 
+    
+    function handleOpenMenu(params) {
+        setIsOpen(isOpen)
+    }
+
   return (
     <div>
         <div className='container'>
             <nav>
                 <div className='nav-ul1'>
-                    <ul>
+                {
+                (isOpen && <ul>
+                    {/* <div onMouseOver={()=>{setIsOpen(true)}} onMouseOut={()=>{setIsOpen(false)}}>
+                        <li><Link>Home</Link></li>
+                        <div className={`${isOpen ? 'home-nav-open': 'home-nav-close'}`}>
+                            <ul>
+                                <li><Link>Check</Link></li>
+                                <li><Link>Check</Link></li>
+                                <li><Link>Check</Link></li>
+                                <li><Link>Check</Link></li>
+                            </ul>
+                        </div>
+                    </div> */}
+
+                    <div onMouseOver={()=>{setBuyIsOpen(true)}} onMouseOut={()=>{setBuyIsOpen(false)}}>
                         <li>
-                            <Link onMouseEnter={()=> navDropdown('myTest')}  onMouseLeave={()=>closeNavDropDown('myTest')}> Buy 
-                                <div id='myTest' className='NavHover'>
+                            <Link> Buy 
+                                <div className={`${buyisOpen ? 'buy-nav-open' : 'buy-nav-close'}`}>
                                     <div className='DropDown-container'>
                                         <div className='DropDown1' style={{borderRight:'1px solid black'}}>
                                             <span>Home for sale</span>
-                                           <div className='DropDown-container--1'>
+                                        <div className='DropDown-container--1'>
                                                 <ul>
                                                     <li><Link>Home for sale</Link></li>
                                                     <li><Link>Foreclosures</Link></li>
@@ -43,7 +72,7 @@ function NavBar() {
                                                     <li><Link>Recent homes</Link></li>
                                                     <li><Link>All homes</Link></li>
                                                 </ul>
-                                           </div>
+                                        </div>
                                         </div>
 
                                         <div className='DropDown-container--2' style={{marginLeft:'-20px'}}>
@@ -59,9 +88,12 @@ function NavBar() {
                                 </div>
                             </Link>
                         </li>
+                    </div>
+
+                    <div onMouseOver={()=>{setRentIsOpen(true)}} onMouseOut={()=>{setRentIsOpen(false)}}>
                         <li>
-                            <Link onMouseEnter={()=> navDropdown('myTest1')}  onMouseLeave={()=>closeNavDropDown('myTest1')} > Rent 
-                                <div id='myTest1' className='NavHover2'>
+                            <Link> Rent 
+                                <div className={`${rentisOpen ? 'rent-nav-open':'rent-nav-close'}`}>
                                     <div className='DropDown2-container'>
                                         <div style={{borderRight:'1px solid black'}}>
                                             <span>Search for rentals</span>
@@ -93,9 +125,12 @@ function NavBar() {
                                 </div>
                             </Link>
                         </li>
+                    </div>
+
+                    <div onMouseOver={()=>{setSellIsOpen(true)}} onMouseOut={()=>setSellIsOpen(false)}>
                         <li>
-                            <Link onMouseEnter={()=> navDropdown('myTest3')}  onMouseLeave={()=>closeNavDropDown('myTest3')} > Sell
-                                <div id='myTest3' className='NavHover3'>
+                            <Link>Sell
+                                <div className={`${sellisOpen ? 'sell-nav-open': 'sell-nav-close'}`}>
                                     <div className='DropDown3-container'>
                                         <div style={{borderRight:'1px solid black'}}>
                                             <span>Resources</span>
@@ -117,9 +152,12 @@ function NavBar() {
                                 </div>
                             </Link>
                         </li>
+                    </div>
+
+                    <div onMouseOver={()=>{setHomeLoanIsOpen(true)}} onMouseOut={()=>{setHomeLoanIsOpen(false)}}>
                         <li>
-                            <Link onMouseEnter={()=> navDropdown('home-loans')}  onMouseLeave={()=>closeNavDropDown('home-loans')}> Home Loans 
-                                <div id='home-loans' className='NavHover4'>
+                            <Link>Home Loans 
+                                <div className={`${homeLoanisOpen ? 'home-loan-open': 'home-loan-close'}`}>
                                     <div className='DropDown2-container'>
                                         <div style={{borderRight:'1px solid black'}}>
                                             <span>Shop mortgages</span>
@@ -155,13 +193,16 @@ function NavBar() {
                                 </div>
                             </Link>
                         </li>
+                    </div>
+
+                    <div onMouseOver={()=>{setAgentFinderIsOpen(true)}} onMouseOut={()=>{setAgentFinderIsOpen(false)}}>     
                         <li>
-                            <Link onMouseEnter={()=> navDropdown('agent-finder')}  onMouseLeave={()=>closeNavDropDown('agent-finder')}> Agent finder 
-                                <div id='agent-finder' className='NavHover5'>
+                            <Link>Agent finder 
+                                <div className={`${agentFinderisOpen ? 'agent-finder-nav-open': 'agent-finder-nav-close'}`}>
                                     <div className='DropDown-container'>
                                         <div className='DropDown1' style={{borderRight:'1px solid black'}}>
                                             <span>Looking for pros?</span>
-                                           <div className='DropDown-container--1'>
+                                        <div className='DropDown-container--1'>
                                                 <ul>
                                                     <li><Link>Real estate agents</Link></li>
                                                     <li><Link>Property managers</Link></li>
@@ -173,7 +214,7 @@ function NavBar() {
                                                     <li><Link>Home builders</Link></li>
                                                     <li><Link>Real estate photographers</Link></li>
                                                 </ul>
-                                           </div>
+                                        </div>
                                         </div>
                                         <div className='DropDown1' style={{marginLeft:'-25px'}}>
                                             <span>I'm a pro</span>
@@ -188,51 +229,62 @@ function NavBar() {
                                                     <li><Link>Real estate agents</Link></li>
                                                     <li><Link>Listing flyers templates</Link></li>
                                                 </ul>
-                                           </div>
+                                        </div>
                                         </div>
 
                                         
                                     </div>
                                 </div>
                             </Link>
-                            </li>
-                    </ul>
+                        </li>
+                    </div>
+
+                </ul>)
+                }
+                    
                 </div>
+
+                {/* menu icon */}
+                <div onMouseOver={handleOpenMenu} className='menu-icon'>
+                    <FaAlignRight/>
+                </div>
+                
                 <div className='nav-img'>
                    <Link to={'/'}> <img src={logo} alt='logo'/></Link>
                 </div>
                 <div className='nav-ul2'>
                     <ul>
-                        <li>
-                            <Link onMouseEnter={()=> navDropdown('Manage-Rentals')}  onMouseLeave={()=>closeNavDropDown('Manage-Rentals')}>Manage Rentals
-                                <div id='Manage-Rentals' className='navHover6 fadeIn'>
-                                    <div className='Manage-Rentals--DropDown3'>
-                                            <div style={{borderBottom:'1px solid rgba(141, 140, 140, 0.678)'}}>
-                                                <span>Resources</span>
-                                                <ul>
-                                                    <li><Link>Explore your options</Link></li>
-                                                    <li><Link>See your home's Zestimate</Link></li>
-                                                    <li><Link>Home values</Link></li>
-                                                    <li><Link>Sellers guide</Link></li>
-                                                    <li><Link>Explore your options</Link></li>
-                                                    <li><Link>See your home's Zestimate</Link></li>
-                                                    <li><Link>Home values</Link></li>
-                                                    <li><Link>Sellers guide</Link></li>
-                                                </ul>
+                        <div onMouseOver={()=>{setManageRentalIsOpen(true)}} onMouseOut={()=>{setManageRentalIsOpen(false)}}>
+                            <li>
+                                <Link>Manage Rentals
+                                    <div className={`${manageRentalisOpen ? 'manage-rental-nav-open':'manage-rental-nav-close'}`}>
+                                        <div className='Manage-Rentals--DropDown3'>
+                                                <div style={{borderBottom:'1px solid rgba(141, 140, 140, 0.678)'}}>
+                                                    <span>Resources</span>
+                                                    <ul>
+                                                        <li><Link>Explore your options</Link></li>
+                                                        <li><Link>See your home's Zestimate</Link></li>
+                                                        <li><Link>Home values</Link></li>
+                                                        <li><Link>Sellers guide</Link></li>
+                                                        <li><Link>Explore your options</Link></li>
+                                                        <li><Link>See your home's Zestimate</Link></li>
+                                                        <li><Link>Home values</Link></li>
+                                                        <li><Link>Sellers guide</Link></li>
+                                                    </ul>
+                                                </div>
+                                                <div style={{marginTop:'20px'}}>
+                                                    <span>Selling options</span>
+                                                    <ul>
+                                                        <li><Link>Find a seller's agent</Link></li>
+                                                        <li><Link>Post For Sale by Owner</Link></li>
+                                                        <li><Link>Post For Sale by Owner</Link></li>
+                                                    </ul>
+                                                </div>
                                             </div>
-                                            <div style={{marginTop:'20px'}}>
-                                                <span>Selling options</span>
-                                                <ul>
-                                                    <li><Link>Find a seller's agent</Link></li>
-                                                    <li><Link>Post For Sale by Owner</Link></li>
-                                                    <li><Link>Post For Sale by Owner</Link></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                </div>
-                            </Link>
-
-                        </li>
+                                    </div>
+                                </Link>
+                            </li>
+                        </div>
                         <li><Link>Advertise </Link></li>
                         <li><Link>Help </Link></li>
                         <li><Link>Sign in </Link></li>

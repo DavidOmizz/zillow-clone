@@ -241,3 +241,109 @@ nav ul {
     color: black;
     padding-top: 20px;
 }
+
+
+/* .home-nav-close {
+    display: none;
+}
+.home-nav-open {
+    display: block;
+    background-color: blue;
+} */
+
+
+
+.buy-nav-close {
+    display: none;
+}
+.buy-nav-open {
+    display: block;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+
+
+
+
+.rent-nav-close {
+    display: none;
+}
+.rent-nav-open {
+    display: block;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+
+
+.sell-nav-close {
+    display: none;
+}
+.sell-nav-open {
+    display: block;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+
+
+.home-loan-close {
+    display: none;
+}
+.home-loan-open {
+    display: block;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+
+
+.agent-finder-nav-close {
+    display: none;
+}
+.agent-finder-nav-open {
+    display: block;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+
+
+.manage-rental-nav-close {
+    display: none;
+}
+.manage-rental-nav-open {
+    position: absolute;
+    background-color: white;
+    padding-top: 15px;
+    width: 20%;
+    /* display: none; */
+    left: 60%;
+    z-index: 999;
+}
+
+
+
+.menu-icon {
+    display: none;
+}
+
+/* Mobile------------------------------------------>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media  screen and  (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+    .nav-img {
+    }
+    .menu-icon {
+        position: absolute;
+        left: 90%;
+        display: block;
+    }
+}
